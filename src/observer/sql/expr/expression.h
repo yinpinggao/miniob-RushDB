@@ -517,6 +517,9 @@ public:
   std::unique_ptr<Aggregator> create_aggregator() const;
 
   static RC type_from_string(const char *type_str, AggregateFunctionType &type);
+  
+  //新增
+  using Type = AggregateFunctionType;
 
 private:
   AggregateFunctionType       aggregate_type_;
